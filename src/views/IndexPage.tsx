@@ -1,11 +1,10 @@
-import React from 'react'
-import Header from '../components/Header'
+import { useAppStore } from '../stores/useAppStore'
 
-export default function indexPage() {
+export default function IndexPage() {
+  useAppStore((state) => state.categories)
   return (
     <div>
-      <h1>Bebidas</h1>
-      <p>Aquí encontrarás una lista de bebidas</p>
+      
     </div>
   )
 }
